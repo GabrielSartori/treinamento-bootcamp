@@ -1,0 +1,25 @@
+Description: Hello Bucket
+
+Resources:
+  
+  BucketSartoriS3:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: bucket-sartori-how-bootcamp
+
+  Bucket2SartoriS3:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: bucket-sartori-how-bootcamp-segundo
+      PublicAccessBlockConfiguration: 
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      BucketEncryption:
+        ServerSideEncryptionConfiguration: 
+        - ServerSideEncryptionByDefault: 
+            SSEAlgorithm: AES256
+
+
+      
