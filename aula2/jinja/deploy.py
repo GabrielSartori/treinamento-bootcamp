@@ -15,7 +15,7 @@ def create_stack(stack_name, template_body, **kwargs):
         StackName=stack_name,
         TemplateBody=template_body,
         Capabilities=['CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM'],
-        TimeoutInMinutes=30,
+        TimeoutInMinutes = 5,
         OnFailure='ROLLBACK'
     )
 
