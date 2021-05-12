@@ -5,7 +5,6 @@ import jinja2
 import yaml
 import os
 
-
 logging.getLogger().setLevel(logging.INFO)
 cloudformation_client = boto3.client('cloudformation')
 
