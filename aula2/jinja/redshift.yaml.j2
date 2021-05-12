@@ -7,7 +7,7 @@ Resources:
     Properties:
       AllowVersionUpgrade: true
       AutomatedSnapshotRetentionPeriod: 5
-      AvailabilityZone: us-west-2a
+      AvailabilityZone: us-west-2
       ClusterIdentifier: redshift-{{ ENVIRONMENT }}-cluster
       ClusterParameterGroupName: !Ref RedshiftParameterGroup
       ClusterSubnetGroupName: !Ref RedshiftSubnetGroup
@@ -50,7 +50,7 @@ Resources:
   RedshiftSubnet:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: us-west-2a
+      AvailabilityZone: us-west-2
       CidrBlock: {{ env.subnetCidrBlock }}
       VpcId: !Ref RedshiftVPC
   {% endif %}
