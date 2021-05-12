@@ -26,6 +26,6 @@ jobs:
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
         redshiftClusterMasterUsername: ${{ secrets.redshiftClusterMasterUsername }}
         redshiftClusterMasterUserPassword: ${{ secrets.redshiftClusterMasterUserPassword }}
-        ENVIRONMENT: sartori-teste
+        ENVIRONMENT: production
       run: |
         python aula2/jinja/deploy.py
